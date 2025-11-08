@@ -2,7 +2,7 @@
 
 ## Bienvenido a mi sitio
 
-¡Hola! Soy Daniel Gonzalez y esta es mi primera página web creada con GitHub Pages. Aquí documentaré mi aprendizaje en programación.
+¡Hola! Soy Daniel Gonzalez y esta es mi primera página web creada con GitHub Pages. Aquí documentaré mi aprendizaje en programación visto en las clases con el profesor Juan Camilo Masias.
 
 ---
 
@@ -10,6 +10,16 @@
 
 ### ¿Qué es un programa?
 Un programa es un conjunto de instrucciones que le decimos a la computadora para que realice una tarea específica. Los programas se escriben en lenguajes de programación como Python, JavaScript, Java, etc.
+
+### ¿Qué es un algortimo?
+Un algoritmo es una secuencia finita y ordenada de pasos o instrucciones que se siguen para resolver un problema o realizar una tarea específica. Es como una receta de cocina: tienes ingredientes (datos de entrada) y sigues pasos específicos para obtener un resultado (salida).
+
+**Caracteristicas de un algoritmo**
+**Finito:** Debe terminar después de un número determinado de pasos
+**Definido:** Cada paso debe estar claramente especificado
+**Entrada:** Puede tener cero o más datos de entrada
+**Salida:** Debe producir al menos un resultado
+**Efectivo:** Cada operación debe ser básica y realizable
 
 ### Variables en Python
 Las variables son contenedores donde guardamos información que podemos usar y modificar más adelante. En Python, crear una variable es muy simple:
