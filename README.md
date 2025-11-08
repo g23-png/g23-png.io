@@ -94,10 +94,11 @@ Lo que más me sorprendió fue lo poderosas que son las variables. Con algo tan 
 
 ---
 
-### Referencias de IA
+### Referencias ⚠️
 
 - Conversaciones con chat GPT
 - Conversaciones con Claude
+- GitHub Learning Lab
 
   ---
 
