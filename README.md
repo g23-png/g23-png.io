@@ -16,9 +16,13 @@ Un algoritmo es una secuencia finita y ordenada de pasos o instrucciones que se 
 
 **Caracteristicas de un algoritmo**
 **Finito:** Debe terminar después de un número determinado de pasos
+
 **Definido:** Cada paso debe estar claramente especificado
+
 **Entrada:** Puede tener cero o más datos de entrada
+
 **Salida:** Debe producir al menos un resultado
+
 **Efectivo:** Cada operación debe ser básica y realizable
 
 ### Variables en Python
