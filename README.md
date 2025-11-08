@@ -80,9 +80,10 @@ Al comenzar con la programación, me di cuenta de que es como aprender un nuevo 
 Lo que más me sorprendió fue lo poderosas que son las variables. Con algo tan simple puedo guardar información y reutilizarla cuantas veces quiera. Me emocionó ver cómo mi primer programa funcionó correctamente.
 
 **Mis objetivos:**
-- Practicar diariamente con ejercicios de Python
-- Crear pequeños proyectos para aplicar lo aprendido
-- Documentar todo mi progreso en esta página
+- Practicar diariamente con ejercicios de Python, ver videos tutoriales en youtube para fortalecer los conocimientos.
+- Crear pequeños proyectos para aplicar lo aprendido.
+- Documentar todo mi progreso en esta página.
+- Practicar en foros, en los cuales puedo exponer novedades que he presentado o resolver dudas de otras personas.
 
 ---
 
