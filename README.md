@@ -94,4 +94,11 @@ Lo que más me sorprendió fue lo poderosas que son las variables. Con algo tan 
 
 ---
 
+### Referencias de IA
+
+- Conversaciones con chat GPT
+- Conversaciones con Claude
+
+  ---
+
 *Última actualización: 7/11/2025*
