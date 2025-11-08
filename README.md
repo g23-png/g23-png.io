@@ -6,7 +6,7 @@
 
 ---
 
-## Temas Vistos en Clase
+## Temas Vistos en Clase 📚
 
 ### ¿Qué es un programa?
 Un programa es un conjunto de instrucciones que le decimos a la computadora para que realice una tarea específica. Los programas se escriben en lenguajes de programación como Python, JavaScript, Java, etc.
@@ -73,7 +73,7 @@ print(f"División: {division}")
 
 ---
 
-## Reflexión Personal
+## Reflexión Personal 💡
 
 Al comenzar con la programación, me di cuenta de que es como aprender un nuevo idioma. Al principio, la sintaxis de Python me parece compleja, especialmente con las indentaciones (espacios al inicio de cada línea). Sin embargo, después de practicar con varios ejemplos, empecé a entender la lógica detrás del código.
 
