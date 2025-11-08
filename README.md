@@ -75,9 +75,10 @@ print(f"División: {division}")
 
 ## Reflexión Personal 💡
 
-Al comenzar con la programación, me di cuenta de que es como aprender un nuevo idioma. Al principio, la sintaxis de Python me parece compleja, especialmente con las indentaciones (espacios al inicio de cada línea). Sin embargo, después de practicar con varios ejemplos, empecé a entender la lógica detrás del código.
+Al comenzar con la programación, me di cuenta de que es como aprender un nuevo idioma. La sintaxis de Python me parece compleja, especialmente con las indentaciones (espacios al inicio de cada línea). Sin embargo, después de practicar con varios ejemplos, empecé a entender la lógica detrás del código, teniendo en cuenta que cada vez que practico pongo en función lo aprendido y con los errores que he comedito he aprendido de ellos.
 
-Lo que más me sorprendió fue lo poderosas que son las variables. Con algo tan simple puedo guardar información y reutilizarla cuantas veces quiera. Me emocionó ver cómo mi primer programa funcionó correctamente.
+De las cosas que más me han sorprendió son las variables. Con algo tan simple puedo guardar información y reutilizarla cuantas veces quiera. Es interesante ver el progreso que he presentado a la fecha.
+
 
 **Mis objetivos:**
 - Practicar diariamente con ejercicios de Python, ver videos tutoriales en youtube para fortalecer los conocimientos.
