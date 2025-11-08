@@ -2,7 +2,9 @@
 
 ## Bienvenido a mi sitio
 
-¡Hola! Soy Daniel Gonzalez y esta es mi primera página web creada con GitHub Pages. Aquí documentaré mi aprendizaje en programación visto en las clases con el profesor Juan Camilo Masias.
+¡Hola! 
+
+Soy Daniel Gonzalez y esta es mi primera página web creada con GitHub Pages. Aquí documentaré mi aprendizaje en programación visto en las clases con el profesor Juan Camilo Masias.
 
 ---
 
