@@ -1,4 +1,4 @@
-# Mi Primera Página Web - Aprendizaje de Programación 🎯 Objetivo
+# Mi Primera Página Web - Aprendizaje de Programación 🎯 
 
 ## Bienvenido a mi sitio
 
