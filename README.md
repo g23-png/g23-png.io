@@ -26,7 +26,7 @@ Un algoritmo es una secuencia finita y ordenada de pasos o instrucciones que se 
 **Efectivo:** Cada operación debe ser básica y realizable
 
 ### Variables en Python
-Las variables son contenedores donde guardamos información que podemos usar y modificar más adelante. En Python, crear una variable es muy simple:
+Las variables son contenedores donde guardamos información que podemos usar y modificar más adelante. En Python, crear una variable es muy simple, siempre y cuando se respeten los pasos que se tiene establecidos o como base:
 
 **Ejemplo de código:**
 ```python
