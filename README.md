@@ -144,7 +144,7 @@ print("Programa terminado.")**
 
 - Segun la información documentada debemos realizar que una vez la tortuga camine los pasos realize un giro de 90 grados
 
-**Código usado en el reto1**
+**Código usado en el reto2**
 
 ```python
 
@@ -158,6 +158,34 @@ t.speed(1) # 1:slowest, 3:slow, 5:normal, 10:fastest
 t.color("Green")
 t.forward(100)
 t.right(90)
+turtle.done()         # Mantiene la ventana abierta
+print("La tortuga ha terminado de caminar.")
+print("Programa terminado.")
+
+```
+
+
+
+
+## Reto 3
+
+- La tortuga ya dio sus primeros pasos, aprendio a girar y con ello llevo los pasos a otro nivel, es algo que podemos ver en el código agregando un **t.forward** con la cantidad de pasos deseada
+
+** Código usado en el reto3**
+
+```python
+
+import turtle
+
+print("Creando una tortuga simulada ... que da pasos")
+input("Cuantos pasos deseas que de la tortuga...")
+t = turtle.Turtle()
+t.shape("turtle")
+t.speed(1) # 1:slowest, 3:slow, 5:normal, 10:fastest
+t.color("Green")
+t.forward(100)
+t.right(90)
+t.forward(100)
 turtle.done()         # Mantiene la ventana abierta
 print("La tortuga ha terminado de caminar.")
 print("Programa terminado.")
