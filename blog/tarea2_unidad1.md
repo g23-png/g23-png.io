@@ -3,9 +3,9 @@
 
 ## Reto 1
 
-Simula el comportamiento de la tortuga usando solo print() e input().
+**Simula el comportamiento de la tortuga usando solo print() e input().**
 
-Intenta recrear el movimiento de la tortuga únicamente con texto, usando funciones, print() y input() para pedir valores al usuario.
+**Intenta recrear el movimiento de la tortuga únicamente con texto, usando funciones, print() y input() para pedir valores al usuario.**
 
 - En base al código suministrado por el profesor se agrega la función **print**, ya que en la entrada buscamos que brinde un saludo o contexto y se usa la función **input** para indicar al usuario cuantos pasos desea que recorra la turtuga.
 
@@ -34,10 +34,9 @@ print("Programa terminado.")**
 
 ## Reto 2
 
-Tortuga bajando
+**Tortuga bajando**
 
-Crea el rastro de una tortuga moviéndose hacia abajo usando únicamente print() e input().
-La salida esperada es similar a:
+**Crea el rastro de una tortuga moviéndose hacia abajo usando únicamente print() e input().**
 
 - Segun la información documentada debemos realizar que una vez la tortuga camine los pasos realize un giro de 90 grados
 
@@ -66,8 +65,7 @@ print("Programa terminado.")
 
 ## Reto 3
 
-Ahora la tortuga no solo avanza: también gira.
-Observa cómo lo hace la versión gráfica:
+**Ahora la tortuga no solo avanza: también gira.**
 
 - La tortuga ya dio sus primeros pasos, aprendio a girar y con ello llevo los pasos a otro nivel, es algo que podemos ver en el código agregando un **t.forward** con la cantidad de pasos deseada
 
@@ -96,8 +94,7 @@ print("Programa terminado.")
 
 ## Reto 4
 
-Reescribe los retos anteriores creando funciones que representen los movimientos de la tortuga solo con texto.
-Usa las siguientes funciones como interfaz:
+**Reescribe los retos anteriores creando funciones que representen los movimientos de la tortuga solo con texto.**
 
 - Se busca que la tortuga siga caminando y creando la L, pero creando unas nuevas funciones. En este reto aprendi adicional a generar cambios en el color del fondo y tener una linea más gruesa
 
@@ -144,8 +141,8 @@ print("Programa terminado.")
 
 ## Reto 5
 
-Ajusta tus funciones para que la tortuga pueda bajar escalones.
-Cada escalón debe conservar la posición horizontal acumulada y dibujar correctamente tanto el tramo horizontal como el vertical.
+**Ajusta tus funciones para que la tortuga pueda bajar escalones.
+Cada escalón debe conservar la posición horizontal acumulada y dibujar correctamente tanto el tramo horizontal como el vertical.**
 
 - Ahora el reto es mayor, ya que la tortuga debe bajar escalas, se realiza un cambio en el código, ya que cada vez que llamaba abajo la tortuga giraba 90 grados y estaba realizando un circulo, con ayuda de una inteligencia artificial descubri el error.
 
