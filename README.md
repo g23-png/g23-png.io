@@ -190,4 +190,47 @@ print("Programa terminado.")
 ![](https://github.com/g23-png/g23-png.io/blob/main/Reto%203.png)
 
 
+## Reto 4
+
+- Se busca que la tortuga siga caminando y creando la L, pero creando unas nuevas funciones. En este reto aprendi adicional a generar cambios en el color del fondo y tener una linea más gruesa
+
+** Código usado en el reto4**
+
+```python
+
+import turtle
+
+# Definir las funciones para encapsular los movimientos
+def adelante(n):
+    """Dibuja el movimiento hacia la derecha (→) por n pasos"""
+    t.forward(n)
+
+def abajo(n):
+    """Dibuja el movimiento hacia abajo (↓) por n pasos"""
+    t.right(90)
+    t.forward(n)
+
+print("Creando una tortuga simulada ... que da pasos")
+input("Cuantos pasos deseas que de la tortuga...")
+
+# Crear la tortuga
+t = turtle.Turtle()
+t.shape("turtle")
+turtle.bgcolor("#BAF08B")
+t.speed(1)  # 1:slowest, 3:slow, 5:normal, 10:fastest
+t.color("Green")
+t.pencolor("black")
+t.pensize(3)
+
+# Usar las funciones para crear el patrón en forma de L
+adelante(50)
+abajo(30)
+
+turtle.done()  # Mantiene la ventana abierta
+print("La tortuga ha terminado de caminar.")
+print("Programa terminado.")
+
+```
+
+
 *Última actualización: 21/11/2025*
