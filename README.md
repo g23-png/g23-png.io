@@ -138,3 +138,28 @@ print("Programa terminado.")**
 ![](https://github.com/g23-png/g23-png.io/blob/main/Reto%201.png)
 
 **Se realiza estudio por medio de videos en internet en el cual se le brindo una forma a la tortuga, se asigna una velocidad y un color.**
+
+
+## Reto 2
+
+- Segun la información documentada debemos realizar que una vez la tortuga camine los pasos realize un giro de 90 grados
+
+**Código usado en el reto1**
+
+```python
+
+import turtle
+
+print("Creando una tortuga simulada ... que da pasos")
+input("Cuantos pasos deseas que de la tortuga...")
+t = turtle.Turtle()
+t.shape("turtle")
+t.speed(1) # 1:slowest, 3:slow, 5:normal, 10:fastest
+t.color("Green")
+t.forward(100)
+t.right(90)
+turtle.done()         # Mantiene la ventana abierta
+print("La tortuga ha terminado de caminar.")
+print("Programa terminado.")
+
+```
