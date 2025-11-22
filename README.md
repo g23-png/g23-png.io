@@ -133,4 +133,6 @@ turtle.done()         # Mantiene la ventana abierta
 print("La tortuga ha terminado de caminar.")
 print("Programa terminado.")**
 
+```
+
 Se realiza estudio por medio de videos en internet en el cual se le brindo una forma a la tortuga, se asigna una velocidad y un color.
