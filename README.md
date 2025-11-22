@@ -234,4 +234,59 @@ print("Programa terminado.")
 
 ![](https://github.com/g23-png/g23-png.io/blob/main/Reto%204.png)
 
+
+## Reto 5
+
+- Ahora el reto es mayor, ya que la tortuga debe bajar escalas, se realiza un cambio en el código, ya que cada vez que llamaba abajo la tortuga giraba 90 grados y estaba realizando un circulo, con ayuda de una inteligencia artificial descubri el error.
+
+** Código usado en el reto5**
+
+```python
+
+import turtle
+
+# Definir las funciones para encapsular los movimientos
+def adelante(n):
+    """Dibuja el movimiento hacia la derecha (→) por n pasos"""
+    t.setheading(0)  # Asegura que mire hacia la derecha (0°)
+    t.forward(n * 10)  # Multiplicamos por 10 para hacer pasos más visibles
+
+def abajo(n):
+    """Dibuja el movimiento hacia abajo (↓) por n pasos"""
+    t.setheading(270)  # Asegura que mire hacia abajo (270°)
+    t.forward(n * 10)  # Multiplicamos por 10 para hacer pasos más visibles
+
+print("Creando una tortuga simulada ... que da pasos")
+input("Presiona Enter para comenzar...")
+
+# Crear la tortuga
+t = turtle.Turtle()
+t.shape("turtle")
+turtle.bgcolor("#BAF08B")
+t.speed(2)  # Un poco más rápido para ver mejor el patrón
+t.color("Green")
+t.pencolor("black")
+t.pensize(3)
+
+# Dibujar los escalones según el ejemplo
+# Escalón 1
+adelante(5)
+abajo(2)
+
+# Escalón 2
+adelante(5)
+abajo(2)
+
+# Escalón 3
+adelante(3)
+abajo(2)
+
+turtle.done()  # Mantiene la ventana abierta
+print("La tortuga ha terminado de caminar.")
+print("Programa terminado.")
+
+```
+
+![](https://github.com/g23-png/g23-png.io/blob/main/Reto%204.png)
+
 *Última actualización: 21/11/2025*
