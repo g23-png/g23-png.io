@@ -115,6 +115,21 @@ De las cosas que más me han sorprendió son las variables. Con algo tan simple 
 
 ## Reto 1
 
-- En base al código suministrado por el profesor se agrega la función *print*, ya que en la entrada buscamos que brinde un saludo o contexto y se usa la función *input* para indicar al usuario cuantos pasos desea que recorra la turtuga
+- En base al código suministrado por el profesor se agrega la función **print**, ya que en la entrada buscamos que brinde un saludo o contexto y se usa la función **input** para indicar al usuario cuantos pasos desea que recorra la turtuga.
 
+**Código usado en el reto1**
 
+**import turtle
+
+print("Creando una tortuga simulada ... que da pasos")
+input("Cuantos pasos deseas que de la tortuga...")
+t = turtle.Turtle()
+t.shape("turtle")
+t.speed(1) # 1:slowest, 3:slow, 5:normal, 10:fastest
+t.color("Green")
+t.forward(100)
+turtle.done()         # Mantiene la ventana abierta
+print("La tortuga ha terminado de caminar.")
+print("Programa terminado.")**
+
+Se realiza estudio por medio de videos en internet en el cual se le brindo una forma a la tortuga, se asigna una velocidad y un color.
