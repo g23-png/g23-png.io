@@ -232,5 +232,6 @@ print("Programa terminado.")
 
 ```
 
+![](https://github.com/g23-png/g23-png.io/blob/main/Reto%204.png)
 
 *Última actualización: 21/11/2025*
