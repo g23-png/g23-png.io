@@ -113,3 +113,8 @@ De las cosas que más me han sorprendió son las variables. Con algo tan simple 
 ## Implementando una tortuga desde cero
 
 
+## Reto 1
+
+- En base al código suministrado por el profesor se agrega la función *print*, ya que en la entrada buscamos que brinde un saludo o contexto y se usa la función *input* para indicar al usuario cuantos pasos desea que recorra la turtuga
+
+
