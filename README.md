@@ -119,6 +119,7 @@ De las cosas que más me han sorprendió son las variables. Con algo tan simple 
 
 **Código usado en el reto1**
 
+```python
 **import turtle
 
 print("Creando una tortuga simulada ... que da pasos")
