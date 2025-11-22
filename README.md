@@ -135,4 +135,6 @@ print("Programa terminado.")**
 
 ```
 
+![](https://github.com/g23-png/g23-png.io/blob/main/Reto%201.png)
+
 **Se realiza estudio por medio de videos en internet en el cual se le brindo una forma a la tortuga, se asigna una velocidad y un color.**
