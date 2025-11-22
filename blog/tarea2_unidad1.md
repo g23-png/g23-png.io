@@ -181,4 +181,10 @@ print("Programa terminado.")
 
 ![](https://github.com/g23-png/g23-png.io/blob/main/Reto%205.png)
 
+
+### Referencias ⚠️
+
+- Conversaciones con claude
+- Tutoriales de Youtube
+
 *Última actualización: 21/11/2025*
