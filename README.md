@@ -105,10 +105,6 @@ De las cosas que más me han sorprendió son las variables. Con algo tan simple 
 
   ---
 
-*Última actualización: 7/11/2025*
-
-
-
 
 ## Implementando una tortuga desde cero
 
@@ -163,7 +159,7 @@ print("La tortuga ha terminado de caminar.")
 print("Programa terminado.")
 
 ```
-
+![](https://github.com/g23-png/g23-png.io/blob/main/Reto%202.png)
 
 
 
@@ -191,3 +187,7 @@ print("La tortuga ha terminado de caminar.")
 print("Programa terminado.")
 
 ```
+![](https://github.com/g23-png/g23-png.io/blob/main/Reto%203.png)
+
+
+*Última actualización: 21/11/2025*
