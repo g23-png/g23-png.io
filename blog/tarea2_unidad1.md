@@ -7,23 +7,17 @@
 
 **Intenta recrear el movimiento de la tortuga únicamente con texto, usando funciones, print() y input() para pedir valores al usuario.**
 
-- En base al código suministrado por el profesor se agrega la función **print**, ya que en la entrada buscamos que brinde un saludo o contexto y se usa la función **input** para indicar al usuario cuantos pasos desea que recorra la turtuga.
+- Se agrega la función print para imprimir el enunciado sobre la tortuga, se agregan los caracteres de guiones y signos para marcar los pasos y final de los mismos
 
 **Código usado en el reto1**
 
 ```python
-**import turtle
+def reto_uno(pasos):
+    print("Creando tortuga simulada que da... 50 pasos")
+    print("-" * pasos + ">")
+    return
 
-print("Creando una tortuga simulada ... que da pasos")
-input("Cuantos pasos deseas que de la tortuga...")
-t = turtle.Turtle()
-t.shape("turtle")
-t.speed(1) # 1:slowest, 3:slow, 5:normal, 10:fastest
-t.color("Green")
-t.forward(100)
-turtle.done()         # Mantiene la ventana abierta
-print("La tortuga ha terminado de caminar.")
-print("Programa terminado.")**
+reto_uno(50)
 
 ```
 
