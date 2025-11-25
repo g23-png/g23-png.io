@@ -58,26 +58,24 @@ reto_dos(5)
 
 **Ahora la tortuga no solo avanza: también gira.**
 
-- La tortuga ya dio sus primeros pasos, aprendio a girar y con ello llevo los pasos a otro nivel, es algo que podemos ver en el código agregando un **t.forward** con la cantidad de pasos deseada
+- Para dar una solución a que la tortuga se pueda desplazar hacia abajo, procedo a dejar unos espacios en el código.
+
+- **Nota:** Tener en cuenta que si excede de 5 a más pasos el desplazamiento puede fallar
 
 ** Código usado en el reto3**
 
 ```python
 
-import turtle
+def reto_uno(pasos):
+    print("Nuestra  tortuga ahora avanza adelante y tambien baja")
+    print("-" * pasos + ">")
 
-print("Creando una tortuga simulada ... que da pasos")
-input("Cuantos pasos deseas que de la tortuga...")
-t = turtle.Turtle()
-t.shape("turtle")
-t.speed(1) # 1:slowest, 3:slow, 5:normal, 10:fastest
-t.color("Green")
-t.forward(100)
-t.right(90)
-t.forward(100)
-turtle.done()         # Mantiene la ventana abierta
-print("La tortuga ha terminado de caminar.")
-print("Programa terminado.")
+def reto_dos(abajo_pasos):
+    for i in range(abajo_pasos):
+        print("    |")
+    print("    V")
+reto_uno(5)
+reto_dos(3)
 
 ```
 ![](https://github.com/g23-png/g23-png.io/blob/main/Reto%203.png)
@@ -87,43 +85,35 @@ print("Programa terminado.")
 
 **Reescribe los retos anteriores creando funciones que representen los movimientos de la tortuga solo con texto.**
 
-- Se busca que la tortuga siga caminando y creando la L, pero creando unas nuevas funciones. En este reto aprendi adicional a generar cambios en el color del fondo y tener una linea más gruesa
+- En esta ocasión el usuario puede indicar cuantos pasos avanza y adicional cuantos pasos puede bajar la tortuga
 
 ** Código usado en el reto4**
 
 ```python
 
-import turtle
+pasos_adelante = int(input("¿Cuántos pasos avanza la tortuga? "))
+pasos_abajo = int(input("¿Cuántos pasos baja la tortuga? "))
 
-# Definir las funciones para encapsular los movimientos
-def adelante(n):
-    """Dibuja el movimiento hacia la derecha (→) por n pasos"""
-    t.forward(n)
+def adelante(pasos):
+    if pasos >= 50:
+        print("No se permiten más de 50 pasos hacia adelante.")
+    else:
+        # Dibuja la flecha hacia adelante
+        print("-" * pasos + ">")
 
-def abajo(n):
-    """Dibuja el movimiento hacia abajo (↓) por n pasos"""
-    t.right(90)
-    t.forward(n)
+def abajo(pasos, espacio_izquierdo):
+    # Dibuja la bajada alineada con el final de la flecha
+    for i in range(pasos):
+        print(" " * espacio_izquierdo + "|")
+    
+    print(" " * espacio_izquierdo + "V")
 
-print("Creando una tortuga simulada ... que da pasos")
-input("Cuantos pasos deseas que de la tortuga...")
+adelante(pasos_adelante)
+abajo(pasos_abajo, pasos_adelante)
 
-# Crear la tortuga
-t = turtle.Turtle()
-t.shape("turtle")
-turtle.bgcolor("#BAF08B")
-t.speed(1)  # 1:slowest, 3:slow, 5:normal, 10:fastest
-t.color("Green")
-t.pencolor("black")
-t.pensize(3)
-
-# Usar las funciones para crear el patrón en forma de L
-adelante(50)
-abajo(30)
-
-turtle.done()  # Mantiene la ventana abierta
-print("La tortuga ha terminado de caminar.")
-print("Programa terminado.")
+pasos_totales = pasos_adelante + pasos_abajo
+print("La tortuga recorrió un total de", pasos_totales, "pasos.")
+print("¡Felicidades la tortuga culmino su reccorido!")
 
 ```
 
@@ -141,47 +131,51 @@ Cada escalón debe conservar la posición horizontal acumulada y dibujar correct
 
 ```python
 
-import turtle
+pasos_adelante = int(input("¿Cuántos pasos avanza la tortuga? "))
+pasos_abajo = int(input("¿Cuántos pasos baja la tortuga? "))
 
-# Definir las funciones para encapsular los movimientos
-def adelante(n):
-    """Dibuja el movimiento hacia la derecha (→) por n pasos"""
-    t.setheading(0)  # Asegura que mire hacia la derecha (0°)
-    t.forward(n * 10)  # Multiplicamos por 10 para hacer pasos más visibles
+# Creamos una variable para saber cuántos escalones dibujar
+cantidad_escalones = int(input("¿Cuántos escalones bajará la tortuga? "))
 
-def abajo(n):
-    """Dibuja el movimiento hacia abajo (↓) por n pasos"""
-    t.setheading(270)  # Asegura que mire hacia abajo (270°)
-    t.forward(n * 10)  # Multiplicamos por 10 para hacer pasos más visibles
+# Estas variables nos ayudan a llevar la cuenta de los espacios y pasos
+espacios_acumulados = 0 
+pasos_totales = 0
 
-print("Creando una tortuga simulada ... que da pasos")
-input("Presiona Enter para comenzar...")
+def adelante(pasos, espacios_al_inicio):
+    # Hacemos una verificación para que no se pase de 50 pasos
+    if pasos >= 50:
+        print("No se permiten más de 50 pasos hacia adelante.")
+        return
+    else:
+        # imprimimos los espacios y luego los guiones con la flecha
+        espacios = " " * espacios_al_inicio
+        flecha = "-" * pasos + ">"
+        print(espacios + flecha)
 
-# Crear la tortuga
-t = turtle.Turtle()
-t.shape("turtle")
-turtle.bgcolor("#BAF08B")
-t.speed(2)  # Un poco más rápido para ver mejor el patrón
-t.color("Green")
-t.pencolor("black")
-t.pensize(3)
+def abajo(pasos, espacios_al_inicio):
+    # Dibujamos los pasos de bajada
+    for i in range(pasos):
+        print(" " * espacios_al_inicio + "|")
+    
+    # Colocamos la flecha hacia abajo al final
+    print(" " * espacios_al_inicio + "V")
 
-# Dibujar los escalones según el ejemplo
-# Escalón 1
-adelante(5)
-abajo(2)
+# Repetimos el proceso para cada escalón
+for i in range(cantidad_escalones):
+    
+    # 1. Avanzamos hacia adelante
+    adelante(pasos_adelante, espacios_acumulados)
+    
+    # 2. Acumulamos los espacios para el próximo escalón
+    espacios_acumulados = espacios_acumulados + pasos_adelante
+    
+    # 3. Bajamos hacia abajo
+    abajo(pasos_abajo, espacios_acumulados)
+    
+    # Se suman los pasos al total
+    pasos_totales += pasos_adelante + pasos_abajo
 
-# Escalón 2
-adelante(5)
-abajo(2)
-
-# Escalón 3
-adelante(3)
-abajo(2)
-
-turtle.done()  # Mantiene la ventana abierta
-print("La tortuga ha terminado de caminar.")
-print("Programa terminado.")
+print("La tortuga recorrió un total de", pasos_totales, "pasos.")
 
 ```
 
@@ -193,4 +187,4 @@ print("Programa terminado.")
 - Conversaciones con claude
 - Tutoriales de Youtube
 
-*Última actualización: 21/11/2025*
+*Última actualización: 24/11/2025*
