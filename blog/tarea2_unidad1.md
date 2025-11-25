@@ -32,25 +32,22 @@ reto_uno(50)
 
 **Crea el rastro de una tortuga moviéndose hacia abajo usando únicamente print() e input().**
 
-- Segun la información documentada debemos realizar que una vez la tortuga camine los pasos realize un giro de 90 grados
+- Con la función **print** se indica la cantidad la cantidad de pasos que va a dar la tortuga  la dirección, se usa **for i in range(pasos):** para repetir la secuencia **N** veces que se agregue en el código.
 
 **Código usado en el reto2**
 
 ```python
 
-import turtle
+def reto_dos(pasos):
+    # Dibujamos los pasos de bajada
+    print("Dibujando la bajada de la tortuga, la cual va a dar 5 pasos:")
+    for i in range(pasos):
+        print("|")
+    
+    # Colocamos la flecha hacia abajo al final
+    print("V")
 
-print("Creando una tortuga simulada ... que da pasos")
-input("Cuantos pasos deseas que de la tortuga...")
-t = turtle.Turtle()
-t.shape("turtle")
-t.speed(1) # 1:slowest, 3:slow, 5:normal, 10:fastest
-t.color("Green")
-t.forward(100)
-t.right(90)
-turtle.done()         # Mantiene la ventana abierta
-print("La tortuga ha terminado de caminar.")
-print("Programa terminado.")
+reto_dos(5)
 
 ```
 ![](https://github.com/g23-png/g23-png.io/blob/main/Reto%202.png)
