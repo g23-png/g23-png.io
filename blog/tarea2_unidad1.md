@@ -48,7 +48,6 @@ def reto_dos(pasos):
 reto_dos(5)
 
 ```
-![](https://github.com/g23-png/g23-png.io/blob/main/Reto%202.png)
 
 
 
@@ -76,7 +75,6 @@ reto_uno(5)
 reto_dos(3)
 
 ```
-![](https://github.com/g23-png/g23-png.io/blob/main/Reto%203.png)
 
 
 ## Reto 4
@@ -114,8 +112,6 @@ print("La tortuga recorrió un total de", pasos_totales, "pasos.")
 print("¡Felicidades la tortuga culmino su reccorido!")
 
 ```
-
-![](https://github.com/g23-png/g23-png.io/blob/main/Reto%204.png)
 
 
 ## Reto 5
@@ -176,8 +172,6 @@ for i in range(cantidad_escalones):
 print("La tortuga recorrió un total de", pasos_totales, "pasos.")
 
 ```
-
-![](https://github.com/g23-png/g23-png.io/blob/main/Reto%205.png)
 
 
 ### Referencias ⚠️
