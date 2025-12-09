@@ -179,4 +179,4 @@ print("La tortuga recorrió un total de", pasos_totales, "pasos.")
 - Conversaciones con claude
 - Tutoriales de Youtube
 
-*Última actualización: 24/11/2025*
+*Última actualización: 9/12/2025*
