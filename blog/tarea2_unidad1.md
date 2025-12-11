@@ -40,152 +40,96 @@ from mini_turtle import adelante, abajo, reiniciar
 
 ## Reto 2
 
-**Tortuga bajando**
+### 2. `mini_turtle/draewer_logic.py`
+**Qué es:** Módulo que contiene la lógica de dibujo ASCII.
 
-**Crea el rastro de una tortuga moviéndose hacia abajo usando únicamente print() e input().**
+**Variables globales:**
+- `posicion_x`: posición horizontal del cursor (0 por defecto)
+- `posicion_y`: posición vertical del cursor (0 por defecto)
 
-- Con la función **print** se indica la cantidad la cantidad de pasos que va a dar la tortuga  la dirección, se usa **for i in range(pasos):** para repetir la secuencia **N** veces que se agregue en el código.
+**Funciones:**
 
-**Código usado en el reto2**
+#### `adelante(pasos)`
+- **Qué hace:** dibuja una línea horizontal usando guiones (`-`) y termina con `>`
+- **Parámetros:** `pasos` (int) — número de caracteres `-` a dibujar
+- **Efecto:** incrementa `posicion_x` en la cantidad de pasos
+- **Ejemplo:**
+  ```
+  adelante(7)  # Output: --------->
+  ```
 
-```python
+#### `abajo(pasos)`
+- **Qué hace:** dibuja una línea vertical usando `|` y termina con `V`
+- **Parámetros:** `pasos` (int) — número de líneas con `|` a dibujar
+- **Efecto:** incrementa `posicion_y` en la cantidad de pasos
+- **Ejemplo:**
+  ```
+  abajo(3)  # Output:
+            # |
+            # |
+            # V
+  ```
 
-def reto_dos(pasos):
-    # Dibujamos los pasos de bajada
-    print("Dibujando la bajada de la tortuga, la cual va a dar 5 pasos:")
-    for i in range(pasos):
-        print("|")
-    
-    # Colocamos la flecha hacia abajo al final
-    print("V")
+#### `reiniciar()`
+- **Qué hace:** reinicia las posiciones a (0, 0)
+- **Parámetros:** ninguno
+- **Efecto:** resetea `posicion_x` y `posicion_y` a 0
+- **Uso:** limpia el estado antes de un nuevo dibujo
 
-reto_dos(5)
+### 3. `main.py`
+**Qué es:** Script de ejemplo que demuestra el uso de las funciones.
 
+**Flujo:**
+1. Reinicia posición
+2. Dibuja línea de 7 caracteres hacia adelante
+3. Dibuja línea de 3 caracteres hacia abajo
+4. Reinicia de nuevo
+5. Dibuja línea de 5 adelante y 5 abajo
+6. Dibuja línea de 3 adelante y 7 abajo
+
+**Cómo ejecutar:**
+```bash
+python main.py
 ```
 
 
 
-## Reto 3
+**Incluye:**
+- `__pycache__/` — caché compilado de Python
+- `*.py[cod]` — archivos compilados
+- `.venv/` — entorno virtual
+- Directorios de cobertura, tests y build
+- Archivos de IDE y configuración local
 
-**Ahora la tortuga no solo avanza: también gira.**
+## Cómo usar el proyecto
 
-- Para dar una solución a que la tortuga se pueda desplazar hacia abajo, procedo a dejar unos espacios en el código.
-
-- **Nota:** Tener en cuenta que si excede de 5 a más pasos el desplazamiento puede fallar
-
-** Código usado en el reto3**
-
-```python
-
-def reto_uno(pasos):
-    print("Nuestra  tortuga ahora avanza adelante y tambien baja")
-    print("-" * pasos + ">")
-
-def reto_dos(abajo_pasos):
-    for i in range(abajo_pasos):
-        print("    |")
-    print("    V")
-reto_uno(5)
-reto_dos(3)
-
+### 1. Clonar y entrar al directorio
+```bash
+git clone <repo> && cd project_mini_turtle
 ```
 
-
-## Reto 4
-
-**Reescribe los retos anteriores creando funciones que representen los movimientos de la tortuga solo con texto.**
-
-- En esta ocasión el usuario puede indicar cuantos pasos avanza y adicional cuantos pasos puede bajar la tortuga
-
-** Código usado en el reto4**
-
-```python
-
-pasos_adelante = int(input("¿Cuántos pasos avanza la tortuga? "))
-pasos_abajo = int(input("¿Cuántos pasos baja la tortuga? "))
-
-def adelante(pasos):
-    if pasos >= 50:
-        print("No se permiten más de 50 pasos hacia adelante.")
-    else:
-        # Dibuja la flecha hacia adelante
-        print("-" * pasos + ">")
-
-def abajo(pasos, espacio_izquierdo):
-    # Dibuja la bajada alineada con el final de la flecha
-    for i in range(pasos):
-        print(" " * espacio_izquierdo + "|")
-    
-    print(" " * espacio_izquierdo + "V")
-
-adelante(pasos_adelante)
-abajo(pasos_abajo, pasos_adelante)
-
-pasos_totales = pasos_adelante + pasos_abajo
-print("La tortuga recorrió un total de", pasos_totales, "pasos.")
-print("¡Felicidades la tortuga culmino su reccorido!")
-
+### 3. Ejecutar el programa
+```bash
+python main.py
 ```
 
-
-## Reto 5
-
-**Ajusta tus funciones para que la tortuga pueda bajar escalones.
-Cada escalón debe conservar la posición horizontal acumulada y dibujar correctamente tanto el tramo horizontal como el vertical.**
-
-- Ahora el reto es mayor, ya que la tortuga debe bajar escalas, se realiza un cambio en el código, ya que cada vez que llamaba abajo la tortuga giraba 90 grados y estaba realizando un circulo, con ayuda de una inteligencia artificial descubri el error.
-
-** Código usado en el reto5**
-
+### 4. (Opcional) Importar en otros scripts
 ```python
+from mini_turtle import adelante, abajo, reiniciar
 
-pasos_adelante = int(input("¿Cuántos pasos avanza la tortuga? "))
-pasos_abajo = int(input("¿Cuántos pasos baja la tortuga? "))
-
-# Creamos una variable para saber cuántos escalones dibujar
-cantidad_escalones = int(input("¿Cuántos escalones bajará la tortuga? "))
-
-# Estas variables nos ayudan a llevar la cuenta de los espacios y pasos
-espacios_acumulados = 0 
-pasos_totales = 0
-
-def adelante(pasos, espacios_al_inicio):
-    # Hacemos una verificación para que no se pase de 50 pasos
-    if pasos >= 50:
-        print("No se permiten más de 50 pasos hacia adelante.")
-        return
-    else:
-        # imprimimos los espacios y luego los guiones con la flecha
-        espacios = " " * espacios_al_inicio
-        flecha = "-" * pasos + ">"
-        print(espacios + flecha)
-
-def abajo(pasos, espacios_al_inicio):
-    # Dibujamos los pasos de bajada
-    for i in range(pasos):
-        print(" " * espacios_al_inicio + "|")
-    
-    # Colocamos la flecha hacia abajo al final
-    print(" " * espacios_al_inicio + "V")
-
-# Repetimos el proceso para cada escalón
-for i in range(cantidad_escalones):
-    
-    # 1. Avanzamos hacia adelante
-    adelante(pasos_adelante, espacios_acumulados)
-    
-    # 2. Acumulamos los espacios para el próximo escalón
-    espacios_acumulados = espacios_acumulados + pasos_adelante
-    
-    # 3. Bajamos hacia abajo
-    abajo(pasos_abajo, espacios_acumulados)
-    
-    # Se suman los pasos al total
-    pasos_totales += pasos_adelante + pasos_abajo
-
-print("La tortuga recorrió un total de", pasos_totales, "pasos.")
-
+reiniciar()
+adelante(10)
+abajo(5)
 ```
+
+## Licencia
+Este proyecto está bajo licencia MIT. Ver [LICENSE](LICENSE) para más detalles.
+
+## Notas prácticas
+- Las funciones usan `print()` para mostrar caracteres en la terminal
+- Las posiciones se rastrean con variables globales
+- El sistema de coordenadas es simple: solo se rastrea X (horizontal) e Y (vertical)
+- Para ver cambios en la lógica, edita [mini_turtle/draewer_logic.py](mini_turtle/draewer_logic.py)
 
 
 ### Referencias ⚠️
@@ -193,4 +137,4 @@ print("La tortuga recorrió un total de", pasos_totales, "pasos.")
 - Conversaciones con claude
 - Tutoriales de Youtube
 
-*Última actualización: 9/12/2025*
+*Última actualización: 11/12/2025*
