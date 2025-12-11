@@ -116,4 +116,4 @@ https://github.com/g23-png/g23-png.io/blob/main/blog/tarea2__unidad1.md
 
 ---
 
-*Última actualización: 21/11/2025*
+*Última actualización: 10/12/2025*
