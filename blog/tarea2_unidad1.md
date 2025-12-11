@@ -22,8 +22,12 @@ README.md                — este archivo
 ## Reto 1
 
 **Simula el comportamiento de la tortuga usando solo print() e input().**
+"""
 
-mini_turtle/__init__.py
+**mini_turtle/__init__.py**
+
+"""
+
 
 Qué es: Archivo que convierte el directorio en un paquete Python e importa las funciones principales.
 
