@@ -1,5 +1,20 @@
-## Implementando una tortuga desde cero 🐢
+## El reto de una tortuga desde cero 🐢
 
+## Que se busca
+
+Implemetar funciones basicas de Python, en las cuales vamos a realizar una similación de nuestra tortuga. Se va a documentar la información sobre este proyecto y se explica la funcionalidad del mismo.
+
+
+```python
+mini_turtle/
+├── __init__.py           — exporta las funciones principales
+├── draewer_logic.py      — lógica de dibujo
+main.py                  — script principal de ejemplo
+.gitignore               — archivos ignorados por git
+LICENSE                  — licencia MIT
+README.md                — este archivo
+
+```
 
 ## Reto 1
 
