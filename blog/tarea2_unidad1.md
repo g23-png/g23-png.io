@@ -5,6 +5,9 @@
 Implemetar funciones basicas de Python, en las cuales vamos a realizar una similación de nuestra tortuga. Se va a documentar la información sobre este proyecto y se explica la funcionalidad del mismo.
 
 
+## Estructura generada en el proyecto.
+
+
 ```python
 mini_turtle/
 ├── __init__.py           — exporta las funciones principales
@@ -20,9 +23,10 @@ README.md                — este archivo
 
 **Simula el comportamiento de la tortuga usando solo print() e input().**
 
-**Intenta recrear el movimiento de la tortuga únicamente con texto, usando funciones, print() y input() para pedir valores al usuario.**
+**mini_turtle/__init__.py.**
 
-- Se agrega la función print para imprimir el enunciado sobre la tortuga, se agregan los caracteres de guiones y signos para marcar los pasos y final de los mismos
+Qué es: Archivo que convierte el directorio en un paquete Python e importa las funciones principales.
+
 
 **Código usado en el reto1**
 
