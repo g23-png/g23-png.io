@@ -112,7 +112,7 @@ https://github.com/g23-png/g23-png.io/blob/main/blog/tarea2__unidad1.md
 
 ### Enlace a entrega final
 
-blog/entrega_final.md
+[blog/entrega_final.md](https://github.com/g23-png/g23-png.io/blob/main/blog/entrega_final.md)  (En proceso)
 
 ---
 
