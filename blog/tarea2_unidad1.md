@@ -23,28 +23,20 @@ README.md                — este archivo
 
 **Simula el comportamiento de la tortuga usando solo print() e input().**
 
-"""
-**mini_turtle/__init__.py**
-"""
+## Componentes principales
 
+### 1. `mini_turtle/__init__.py`
+**Qué es:** Archivo que convierte el directorio en un paquete Python e importa las funciones principales.
 
-Qué es: Archivo que convierte el directorio en un paquete Python e importa las funciones principales.
+**Funcionalidad:**
+- Importa `adelante`, `abajo` y `reiniciar` desde `draewer_logic.py`
+- Define `__version__` = "1.0.0" para versionado
+- Define `__all__` para controlar qué se exporta al hacer `from mini_turtle import *`
 
-
-**Código usado en el reto1**
-
+**Uso:**
 ```python
-def reto_uno(pasos):
-    print("Creando tortuga simulada que da... 50 pasos")
-    print("-" * pasos + ">")
-    return
-
-reto_uno(50)
-
+from mini_turtle import adelante, abajo, reiniciar
 ```
-
-**Se realiza estudio por medio de videos en internet en el cual se le brindo una forma a la tortuga, se asigna una velocidad y un color.**
-
 
 ## Reto 2
 
