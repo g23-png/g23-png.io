@@ -1,4 +1,3 @@
-## El reto de una tortuga desde cero 🐢
 
 ## Que se busca
 
