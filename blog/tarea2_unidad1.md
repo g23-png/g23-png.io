@@ -22,10 +22,9 @@ README.md                — este archivo
 ## Reto 1
 
 **Simula el comportamiento de la tortuga usando solo print() e input().**
+
 """
-
 **mini_turtle/__init__.py**
-
 """
 
 
