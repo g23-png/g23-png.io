@@ -105,6 +105,11 @@ De las cosas que más me han sorprendió son las variables. Con algo tan simple 
 
   ---
 
+### Enlace a trabajo #2
 
+https://github.com/g23-png/g23-png.io/blob/main/blog/tarea2__unidad1.md
+
+
+---
 
 *Última actualización: 21/11/2025*
