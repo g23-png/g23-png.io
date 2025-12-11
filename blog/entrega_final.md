@@ -1,5 +1,5 @@
 
-## Que se busca
+## Que buscamos
 
 Implemetar funciones basicas de Python, en las cuales vamos a realizar una similación de nuestra tortuga. Se va a documentar la información sobre este proyecto y se explica la funcionalidad del mismo.
 
