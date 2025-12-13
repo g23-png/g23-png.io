@@ -88,7 +88,7 @@ def abajo(pasos):
     posicion_y += pasos
 
 ```
-El resultado de usar la interfaz de usuari es 
+El resultado de usar la interfaz de usuario es 
 
 ```python
 adelante(5)
