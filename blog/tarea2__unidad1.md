@@ -64,28 +64,33 @@ abajo(pasos_abajo)
 
 ## Reto 5 La tortuga baja las escalones
 
+Explico como hago para encapsular 
 ```python
 pasos_adelante = int(input("¿Cuántos pasos avanza la tortuga? "))
 pasos_abajo = int(input("¿Cuántos pasos baja la tortuga? "))
 
+
 posicion_x = 0
 posicion_y = 0
-
-def adelante(pasos):
-    global posicion_x, posicion_y
-    print(" " * posicion_x + "-" * pasos + ">")
-    posicion_x += pasos
-
-def abajo(pasos):
-    global posicion_x, posicion_y
-
-    for i in range(pasos):
-        print(" " * posicion_x + "|")
-    
-    print(" " * posicion_x + "V")
+@@ -86,6 +85,20 @@ def abajo(pasos):
 
     posicion_y += pasos
 
 adelante(pasos_adelante)
 abajo(pasos_abajo)
+
 ```
+El resultado de usar la interfaz de usuari es 
+
+```python
+adelante(5)
+abajo(3)    
+
+adelante(5)
+abajo(3)  
+
+adelante(5)
+abajo(3)  
+```
+
+<img width="342" height="345" alt="image" src="https://github.com/user-attachments/assets/0ac7309e-046e-4584-bb2b-f0a782de3645" />
