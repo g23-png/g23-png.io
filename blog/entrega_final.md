@@ -8,13 +8,14 @@ Implemetar funciones basicas de Python, en las cuales vamos a realizar una simil
 
 
 ```python
-mini_turtle/
-├── __init__.py           — exporta las funciones principales
-├── draewer_logic.py      — lógica de dibujo
-main.py                  — script principal de ejemplo
-.gitignore               — archivos ignorados por git
-LICENSE                  — licencia MIT
-README.md                — este archivo
+mini_turtle_task/
+├──mini_turtle/
+├     ├── __init__.py           — exporta las funciones principales
+├     ├── draewer_logic.py      — lógica de dibujo
+├──main.py                  — script principal de ejemplo
+├──.gitignore               — archivos ignorados por git
+├──LICENSE                  — licencia MIT
+├──README.md                — este archivo
 
 ```
 
