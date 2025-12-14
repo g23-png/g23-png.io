@@ -113,6 +113,7 @@ https://github.com/g23-png/g23-png.io/blob/main/blog/tarea2__unidad1.md
 ### Enlace a entrega final
 
 https://github.com/g23-png/Entrega_final 
+https://github.com/g23-png/Entrega_final/tree/main/blog
 
 ---
 
