@@ -113,7 +113,7 @@ De las cosas que más me han sorprendió son las variables. Con algo tan simple 
 ### Enlace a entrega final
 
 - **Ejercicio 1** https://github.com/g23-png/Entrega_final 
-- **Ejercicio 2** 
+- **Ejercicio 2** https://github.com/g23-png/ejercicio_2/blob/main/README.md
 
 ---
 
