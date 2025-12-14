@@ -112,8 +112,8 @@ https://github.com/g23-png/g23-png.io/blob/main/blog/tarea2__unidad1.md
 
 ### Enlace a entrega final
 
-[blog/entrega_final.md](https://github.com/g23-png/g23-png.io/blob/main/blog/entrega_final.md)  (En proceso)
+https://github.com/g23-png/Entrega_final 
 
 ---
 
-*Última actualización: 10/12/2025*
+*Última actualización: 14/12/2025*
