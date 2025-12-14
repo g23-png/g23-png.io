@@ -118,3 +118,4 @@ De las cosas que más me han sorprendió son las variables. Con algo tan simple 
 ---
 
 *Última actualización: 14/12/2025*
+
