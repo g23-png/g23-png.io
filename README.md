@@ -113,7 +113,7 @@ De las cosas que más me han sorprendió son las variables. Con algo tan simple 
 ### Enlace a entrega final
 
 - https://github.com/g23-png/Entrega_final 
-- https://github.com/g23-png/Entrega_final/tree/main/blog
+-
 
 ---
 
